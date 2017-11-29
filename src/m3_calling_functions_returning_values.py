@@ -152,9 +152,22 @@ def run_test_digits_in_cube():
     print('Testing the   digits_in_cube   function:')
     print('-----------------------------------------------------')
 
+    # Test 1:
     expected = 8
     answer = digits_in_cube(5)
     print('Test 1 expected:', expected)
+    print('       actual:  ', answer)
+
+    # Test 2:
+    expected = 9
+    answer = digits_in_cube(3)
+    print('Test 2 expected:', expected)
+    print('       actual:  ', answer)
+
+    # Test 3:
+    expected = 1
+    answer = digits_in_cube(10)
+    print('Test 3 expected:', expected)
     print('       actual:  ', answer)
 
 
