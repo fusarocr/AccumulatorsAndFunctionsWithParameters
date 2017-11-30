@@ -18,6 +18,8 @@ def main():
     print_sequence1()
     draw_circles1()
     print_sequence2()
+    #draw_circles2()
+    print_sequence3()
 
 def print_sequence1():
     """
@@ -126,6 +128,19 @@ def draw_circles2():
     print('Running draw_circles2:  See graphics window')
     print('--------------------------------------------------')
 
+    window = rg.RoseWindow(400, 400)
+
+    radius = 10
+
+    for k in range(18):
+        x = 50+(20*k)
+        center = rg.Point(x,100)
+        circle = rg.Circle(center, radius)
+        circle.attach_to(window)
+        window.render(0.07)  # Pauses for 0.05 seconds after rendering.
+
+    window.close_on_mouse_click()
+
 
 def print_sequence3():
     """
@@ -147,6 +162,11 @@ def print_sequence3():
     print('Running print_sequence3:')
     print('--------------------------------------------------')
 
+    number = 0
+
+    for k in range(100):
+        number = 1 + k
+        print(number)
 
 def draw_circles3():
     """
