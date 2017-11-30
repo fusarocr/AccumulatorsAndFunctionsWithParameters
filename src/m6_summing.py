@@ -90,6 +90,24 @@ def run_test_sum_square_roots():
     print('Testing the   sum_square_roots   function:')
     print('--------------------------------------------------')
 
+    # Test 1:
+    expected = 11.854408
+    answer = 5
+    print('Test 1 expected:', expected)
+    print('       actual:  ', answer)
+
+    # Test 2:
+    expected =
+    answer =
+    print('Test 2 expected:', expected)
+    print('       actual:  ', answer)
+
+    # Test 3:
+    expected =
+    answer =
+    print('Test 3 expected:', expected)
+    print('       actual:  ', answer)
+
 
 def sum_square_roots(n):
     """
