@@ -19,11 +19,11 @@ def main():
     #print_sequence1()
     #draw_circles1()
     #print_sequence2()
-    #draw_circles2()
+    draw_circles2()
     #print_sequence3()
     #draw_circles3()
     #print_cosines()
-    draw_cosines_and_sines()
+    #draw_cosines_and_sines()
 
 def print_sequence1():
     """
@@ -123,7 +123,7 @@ def draw_circles2():
     -- Waits for the user to press the mouse, then closes the window.
     """
     # ------------------------------------------------------------------
-    # TODO: 5. Implement this function, per its doc-string above.
+    # DONE: 5. Implement this function, per its doc-string above.
     # Put a statement in  main  to test this function.
     # REQUIREMENT: You must use a   RANGE  statement to solve this problem.
     # ------------------------------------------------------------------
@@ -140,6 +140,7 @@ def draw_circles2():
         x = 50+(20*k)
         center = rg.Point(x,100)
         circle = rg.Circle(center, radius)
+        circle.fill_color = 'blue'
         circle.attach_to(window)
         window.render(0.07)  # Pauses for 0.05 seconds after rendering.
 
